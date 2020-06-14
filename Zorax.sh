@@ -17,9 +17,9 @@ echo
 echo
 printf "          ${red} [+] Enter the Tool number to Run [+] ${null}\n" 
 echo
-printf "${red}(01)${null} ${gr}TBomb-V-2.0${null} ( Start Call & Sms Spam // Making the network busy )\n"
+printf "${red}(01)${null} ${gr}TBomb${null} ( Start Call & Sms Spam // Making the network busy )\n"
 printf "${red}(02)${null} ${gr}H-Cam${null}       ( Webcam Hacking )\n"
-printf "${red}(03)${null} ${gr}VAMPIRZ${null}     ( Crashing victim's Browser )\n"
+printf "${red}(03)${null} ${gr}B-Crash${null}     ( Crashing victim's Browser )\n"
 printf "${red}(04)${null} ${gr}SQLMAP${null}      ( Database Vuln. Testing )\n"
 printf "${red}(05)${null} ${gr}Metasploit${null}  ( Exploiting )\n"
 printf "${red}(06)${null} ${gr}Amer${null}        ( Making Virus for Android )\n"
@@ -34,7 +34,7 @@ read ch
 if [[ $ch == 1 ]]; then
 
 printf "${red}Running${null}${yelw} TBomb-V-2.0 ...${null} \n"
-cd tools/TBomb-V-2.0
+cd tools/TBomb
 chmod +x *
 pip install -r requirements.txt
 bash TBomb.sh
@@ -52,17 +52,15 @@ fi
 
 if [[ $ch == 3 ]]; then
 printf "${red}Running${null}${yelw} VAMPIRZ ...${null} \n"
-cd tools/VAMPIRZ
+cd tools/B-Crash
 chmod +x *
 clear
-bash vampirz.sh
+bash bc.sh
 
 fi 
 
 if [[ $ch == 4 ]]; then
 printf "${red}Running${null}${yelw} SQLMAP ...${null} \n"
-cd tools/sqlmap
-chmod +x *
 clear
 figlet -f standard "SQLMAP" | lolcat
 echo
@@ -70,7 +68,7 @@ echo
 printf "${yelw}[+] Enter Target URL [+]:>${null}"
 read url
 
-python sqlmap.py -u $url
+sqlmap -u $url
 
 fi
 
@@ -151,13 +149,15 @@ cd tools/XERXES
 chmod +x *
 clear
 gcc -o ./xerxes xerxes.c
-printf "${red}[+] Enter the IP of your Target Site [+]${null}" | lolcat --animate
+printf "${red}[+] Enter the IP of your Target server [+]${null}" | lolcat --animate
 echo 
 echo
 
 printf "${yelw}[#] Enter target IP :> ${null}"
 
 read ip 
+printf "${yelw}[#] Enter target Port :> ${null}"
+read portss
 echo
 
 printf "Starting DDos Attack ..." | lolcat --animate
@@ -165,7 +165,7 @@ echo
 
 sleep 3
 
-./xerxes xerxes.c $ip
+./xerxes xerxes.c $ip $port
 
 fi
 
