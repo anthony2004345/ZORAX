@@ -32,11 +32,11 @@ mkdir tools
 cd tools
 git clone https://github.com/sqlmapproject/sqlmap.git
 git clone https://github.com/Tuhinshubhra/RED_HAWK.git
-git clone https://github.com/thecrazyverma/TBomb-V-2.0
+git clone https://github.com/TheSpeedX/TBomb.git
 git clone https://github.com/DarkSecDevelopers/HiddenEye.git
 git clone https://github.com/rooted-cyber/H-Cam.git
 git clone https://github.com/rooted-cyber/seeker-2.git
-git clone https://github.com/thecrazyverma/VAMPIRZ.git
+git clone https://github.com/rooted-cyber/B-Crash.git
 git clone https://github.com/Amerlaceset/Amer.git
 git clone https://github.com/XCHADXFAQ77X/XERXES.git
 
