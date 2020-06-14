@@ -30,7 +30,8 @@ pip install lolcat
 
 mkdir tools
 cd tools
-git clone https://github.com/sqlmapproject/sqlmap.git
+pkg install unstable-repo
+pkg install sqlmap
 git clone https://github.com/Tuhinshubhra/RED_HAWK.git
 git clone https://github.com/TheSpeedX/TBomb.git
 git clone https://github.com/DarkSecDevelopers/HiddenEye.git
